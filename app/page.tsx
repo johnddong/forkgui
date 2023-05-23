@@ -48,11 +48,11 @@ export default function Counter() {
       Count: {state.count}
       {/* Calling our actions on button click */}
       <button className="ml-1 mr-1"
-        onClick={() => dispatch({ type: CountActionKind.DECREASE, payload: 5 })}
+        onClick={() => dispatch({ type: CountActionKind.DECREASE, payload: 1 })}
       >
         -
       </button>
-      <button onClick={() => dispatch({ type: CountActionKind.INCREASE, payload: 5 })}>+</button>
+      <button onClick={() => dispatch({ type: CountActionKind.INCREASE, payload: 1 })}>+</button>
     </div>
   );
 };
